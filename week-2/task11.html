@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="country-form">
+        <h2>Select Country</h2>
+        <form action="/submit-country" method="post">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="in">India</option>
+                <option value="uk">United Kingdom</option>
+                <option value="us">united states</option>
+                <option value="jp">Japan</option>
+                <option value="sk">south korea</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

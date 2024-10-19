@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list manager</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .task-list {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #ddd;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    .task-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .task-item p {
+      margin: 0;
+    }
+
+    .low-priority {
+      background-color: #c3e6cb;
+    }
+
+    .medium-priority {
+      background-color: #ffeeba;
+    }
+
+    .high-priority {
+      background-color: #f5c6cb;
+    }
+
+    .overdue {
+      color: red;
+      font-weight: bold;
+    }
+
+    .add-task {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #ddd;
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    .add-task input,
+    .add-task select {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .task-stats {
+      border: 2px solid #ddd;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-do list manager</h1>
+        <div class="add-task">
+            <h2>Add new task</h2>
+            <form>
+                <input  type="text" placeholder="Task-tittle"required>
+                <input type="date" required>
+                <select required>
+                 <option value="">Select priority</option>
+                 <option value="low">low</option>
+                 <option value="medium">medium</option>
+                 <option value="high">high</option>
+                </select>
+                <input type="submit" value="Add task">
+            </form>
+        </div>
+        <div class="task-list">
+            <h2>Tasks</h2>
+            <div class="task-item low-priority">
+            <p>Task 1:complete by 10-10-2024</p>
+            <p class="over due">over due!</p>
+            </div>
+            <div class="task item medium priority">
+                <p>Task 2:complete by 10-19-2024</p>
+            </div>
+            <div class="task-item high-priority">
+             <p>Task 3:complete by 10-21-2024</p>
+             <p class="over due">over due!</p>
+            </div>
+        </div>
+    <div class="task-stats">
+        <h2>Task completion statistics</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Completed</th>
+                    <th>Pending</th>
+                    <th>Overdue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Low priority</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Medium priority</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>High priority</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</body>
+</html>

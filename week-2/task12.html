@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gender-form">
+        <h2>Select Gender</h2>
+        <form action="/submit-gender" method="post">
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female"> Male
+            </label>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male"> Female
+            </label>
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other"> Other
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
